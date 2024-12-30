@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -39,10 +39,10 @@ const NavbarPortal: React.FC<NavbarPortalProps> = ({
 
   const handleOpenMenu = () => setOpenMenu(true);
 
-  const handleCloseMenu = () => {
+  const handleCloseMenu = useCallback(() => {
     setOpenMenu(false);
     handleCloseAccordion();
-  };
+  }, []);
 
   const handleOpenAccordion = () => setAccordionOpen((prev) => !prev);
 
@@ -58,7 +58,7 @@ const NavbarPortal: React.FC<NavbarPortalProps> = ({
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [openMenu]);
+  }, [openMenu, handleCloseMenu]);
 
   const { tones } = useThemeController();
 
