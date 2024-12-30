@@ -1,0 +1,70 @@
+{
+  "app": {
+    "name": "sistema de ventas",
+    "admin": "Pablo Facundo Diaz"
+  },
+  "home": {
+    "words": {
+      "sing_up": "registrarse",
+      "sing_in": "iniciar sesion"
+    },
+    "promotions": [
+      {
+        "title": "Control Total de Tu Inventario",
+        "content": "Optimiza la gestión de tu negocio con nuestro sistema de stock web. Accede a herramientas poderosas para un control total de tu inventario en tiempo real.",
+        "image": "IMAGEN🖤",
+        "alingSelf": "self-center"
+      },
+      {
+        "title": "Información en Tiempo Real",
+        "content": "Visualiza datos actualizados al instante. Nuestro sistema de stock web proporciona información en tiempo real para una toma de decisiones más rápida.",
+        "alingSelf": "self-start"
+      },
+      {
+        "title": "Gestión Eficiente de Inventario",
+        "content": "Optimiza la gestión de tu inventario con nuestras herramientas intuitivas. Simplifica el seguimiento de productos y la gestión de existencias.",
+        "alingSelf": "self-end"
+      },
+      {
+        "title": "Notificaciones Instantáneas",
+        "content": "Recibe notificaciones instantáneas sobre cambios importantes en tu inventario. Mantente informado y toma medidas rápidas cuando sea necesario.",
+        "alingSelf": "self-start"
+      },
+      {
+        "title": "Acceso Seguro",
+        "content": "Protegemos tu información. Accede de manera segura a tu sistema de stock web y garantiza la confidencialidad de tus datos.",
+        "alingSelf": "self-end"
+      },
+      {
+        "title": "Personalización a tu Medida",
+        "content": "Adapta nuestro sistema a las necesidades específicas de tu negocio. Personaliza informes, categorías y más para una experiencia única.",
+        "alingSelf": "self-start"
+      }
+    ],
+    "footer": {
+      "text": "Aplicacion creada por Pablo Facundo Diaz"
+    }
+  },
+  "formLogin": {
+    "words": {
+      "title": "iniciar sesión",
+      "email": "correo electronico",
+      "password": "contraseña",
+      "submit": "enviar",
+      "clean": "limpiar",
+      "userTest": "usuario test",
+      "loading": "canrgando..."
+    }
+  },
+  "dashboard": {
+    "info": [
+      "datos de negocio",
+      "cantidad de productos: ",
+      "productos vendidos hoy: ",
+      "ganancia del dia: ",
+      "productos 10 productos mas vendidos: ",
+      "productos a vencer en 10 dias: ",
+      "productos a vencer en 30 dias: "
+    ]
+  }
+}

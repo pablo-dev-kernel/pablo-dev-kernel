@@ -1,0 +1,27 @@
+{
+  "home": {
+    "welcomeMessage": "¡Hola Mundo!",
+    "introText": "Bienvenidos a mi página web.",
+    "description": {
+      "greeting": "Mi nombre es",
+      "name": "Pablo",
+      "role": "Soy programador web, desarrollo soluciones personalizadas utilizando diversas tecnologías y entornos de trabajo.",
+      "commitment": "Estoy preparado para brindar soluciones eficientes y de calidad en cada proyecto."
+    }
+  },
+  "skillsDev": {
+    "header": {
+      "title": "Tecnologías Aprendidas",
+      "subtitle": "Explora los lenguajes de programación y frameworks que he dominado."
+    },
+    "tabs": {
+      "lenguages": "Lenguajes",
+      "frameworks": "Frameworks",
+      "libraries": "Librerías",
+      "operatingSystems": "Sistemas Operativos",
+      "programs": "Programas",
+      "others": "Otros"
+    },
+    "noSkills": "No hay habilidades disponibles para esta categoría."
+  }
+}

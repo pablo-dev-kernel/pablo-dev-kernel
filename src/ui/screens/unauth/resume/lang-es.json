@@ -1,0 +1,91 @@
+{
+  "personal_info": {
+    "fullnameTitle": "Nombre",
+    "fullname": "Pablo Diaz",
+    "nationalityTitle": "Nacionalidad",
+    "nationality": "Argentina",
+    "mailTitle": "Mail",
+    "mailName": "pfd1795@gmail.com",
+    "mailUrl": "pfd1795@gmail.com",
+    "githubTitle": "GitHub",
+    "githubName": "pablo-dev-kernel",
+    "githubUrl": "https://github.com/pablo-dev-kernel",
+    "webSiteTitle": "Web",
+    "webSiteName": "pablo-dev-kernel.github.io/",
+    "webSiteUrl": "https://pablo-dev-kernel.github.io/pablo-dev-kernel/home",
+    "greeting1": "¡Hola, soy Pablo!",
+    "greetingResume": "Ofrezco mis servicios para diversos entornos laborales, destacando mis habilidades en el uso de distintos softwares de gestión, mantenimiento de equipos tecnológicos, atención al público, trabajo en equipo, presentación y respeto.",
+    "professions": [
+      "Informático",
+      "Programador",
+      "Técnico de Computadoras"
+    ]
+  },
+  "titles": {
+    "cv": "Currículum Vitae",
+    "experience": "Experiencia Laboral",
+    "studies": "Estudios | Cursos"
+  },
+  "data": {
+    "work_experience": [
+      {
+        "title": "Desarrollador aplicaciones web y moviles",
+        "company": "Vortex-IT",
+        "date": "2 años",
+        "description": "Desarrollo de interfaces de usuario para páginas web y aplicaciones móviles con React Native."
+      },
+      {
+        "title": "Desarrollador paginas web",
+        "company": "Ministerio de Educación de la Nación",
+        "date": "1 año 6 meses",
+        "description": ".NET Framework, SQL Server."
+      },
+      {
+        "title": "Ayudante estudiantil",
+        "company": "Universidad Nacional de Argentina",
+        "date": "3 años",
+        "description": "Ayudante estudiantil en la creación de páginas web accesibles."
+      },
+      {
+        "title": "Soporte Tecnico Telefonico",
+        "company": "Teleperformance",
+        "date": "3 años",
+        "description": "Telefonista, asistencia personalizada, ventas y soporte técnico."
+      }
+    ],
+    "educations": [
+      {
+        "description": "Microsoft Learn",
+        "title": "Microsoft"
+      },
+      {
+        "description": "Grow Google",
+        "title": "Google"
+      },
+      {
+        "description": "Inglés",
+        "title": "Centro Universitario de Idiomas"
+      },
+      {
+        "description": "Argentina Programa 4.0",
+        "title": "CESSI Argentina"
+      },
+      {
+        "description": "Programador Web MERN Stack",
+        "title": "Rolling Code School"
+      },
+      {
+        "description": "Inglés",
+        "title": "Universidad Tecnológica Nacional"
+      },
+      {
+        "description": "Reparador de Computadoras",
+        "title": "Universidad Tecnológica Nacional"
+      },
+      {
+        "description": "Operador de Computadoras",
+        "title": "Universidad Tecnológica Nacional"
+      }
+    ]
+  }
+}

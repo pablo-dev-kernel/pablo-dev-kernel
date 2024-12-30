@@ -1,0 +1,27 @@
+{
+  "about": {
+    "header": "Sobre mí",
+    "introduction": {
+      "welcome": "Hola, soy Pablo y bienvenidos a mi página en GitHub.",
+      "privacy": "He optado por brindar solamente mi nombre para proteger mi información, privacidad y la de mi entorno.",
+      "objective": "Busco captar la atención de reclutadores que necesiten desarrolladores con experiencia para unirse a sus equipos y aportar soluciones, respeto y lealtad."
+    },
+    "goals": {
+      "mainObjective": "Mi objetivo es incorporarme a los equipos que necesiten desarrolladores de confianza para escalar sus proyectos.",
+      "experience": "Tengo experiencia en educación y formación, aportes en sistemas de uso público/privado, y diseño de interfaces de usuario centradas en la experiencia.",
+      "teamwork": "Ser uno con el equipo es lo que me ayudará a crecer.",
+      "programmingHappiness": "Soy feliz programando, disfrutaré construyendo y brindando soporte a cualquier proyecto, sistema o programa."
+    },
+    "mentors": {
+      "acknowledgment": "Una mención a mis mentores, todos creadores de contenido en YouTube. Quiero expresar mi gratitud hacia quienes dedican su tiempo a instruir e inspirar."
+    },
+    "blog": {
+      "description": "Este blog está en crecimiento. Próximamente encontrarán más contenido, desde pequeñas aplicaciones, notas de estudio y proyectos de programación.",
+      "thankYou": "¡Gracias por visitar!"
+    },
+    "expandButton": {
+      "showMore": "Mostrar más",
+      "showLess": "Mostrar menos"
+    }
+  }
+}
