@@ -32,9 +32,8 @@ const Card: React.FC<CardProps> = ({ index, symbol, flipped, onClick }) => {
   return (
     <div
       key={index}
-      className={`h-36 rounded-xl flex items-center justify-center ${
-        flipped ? tones.bgColor.normal : UI_COLORS.card
-      } hover:outline ${tones.outlineColor.normal}`}
+      className={`h-36 rounded-xl flex items-center justify-center ${flipped ? tones.bgColor.normal : UI_COLORS.card
+        } hover:outline ${tones.outlineColor.normal}`}
       onClick={onClick}
       role="button"
       aria-pressed={flipped}
@@ -72,25 +71,28 @@ const MemoryGame: React.FC = () => {
     initializeGame();
   }, [initializeGame]);
 
-  const handleCardFlip = (index: number) => {
-    if (flippedIndices.length === 2 || flippedIndices.includes(index) || matchedIndices.has(index)) {
-      return;
-    }
-
-    const newFlipped = [...flippedIndices, index];
-    setFlippedIndices(newFlipped);
-
-    if (newFlipped.length === 2) {
-      setMoves((prev) => prev + 1);
-
-      const [first, second] = newFlipped;
-      if (cards[first] === cards[second]) {
-        setMatchedIndices((prev) => new Set([...prev, first, second]));
+  const handleCardFlip = useCallback(
+    (index: number) => {
+      if (flippedIndices.length === 2 || flippedIndices.includes(index) || matchedIndices.has(index)) {
+        return;
       }
 
-      setTimeout(() => setFlippedIndices([]), FLIP_DELAY);
-    }
-  };
+      const newFlipped = [...flippedIndices, index];
+      setFlippedIndices(newFlipped);
+
+      if (newFlipped.length === 2) {
+        setMoves((prev) => prev + 1);
+
+        const [first, second] = newFlipped;
+        if (cards[first] === cards[second]) {
+          setMatchedIndices((prev) => new Set([...prev, first, second]));
+        }
+
+        setTimeout(() => setFlippedIndices([]), FLIP_DELAY);
+      }
+    },
+    [flippedIndices, matchedIndices, cards]
+  );
 
   useEffect(() => {
     if (matchedIndices.size === cards.length && cards.length > 0) {
@@ -116,8 +118,9 @@ const MemoryGame: React.FC = () => {
         ))}
       </div>
     ),
-    [cards, flippedIndices, matchedIndices]
+    [cards, flippedIndices, matchedIndices, handleCardFlip]
   );
+
 
   return (
     <section className={`${UI_COLORS.container} rounded-xl p-2 md:p-4 space-y-4`}>

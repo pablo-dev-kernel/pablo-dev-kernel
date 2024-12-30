@@ -17,7 +17,6 @@ const links = [
 
 export default function PagesLayout(props: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
   const { tones } = useThemeController();
 
