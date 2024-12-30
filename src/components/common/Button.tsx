@@ -4,9 +4,9 @@ import { useThemeController } from "@/libs/hooks/useThemeController";
 interface ButtonProps {
   children?: React.ReactNode;
   disabled?: boolean;
-  leftIcon?: React.ReactElement;
+  leftIcon?: React.ReactElement | string | undefined;
   onClick?: () => void;
-  rightIcon?: React.ReactElement;
+  rightIcon?: React.ReactElement | string | undefined;
   styles?: string;
   text?: string;
   title?: string;

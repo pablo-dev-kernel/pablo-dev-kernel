@@ -14,8 +14,8 @@ interface ModalPortalProps {
   children?: React.ReactNode;
   modalTitle: string;
   actionButtonText: string;
-  leftButtonIcon?: React.ReactNode;
-  rightButtonIcon?: React.ReactNode;
+  leftButtonIcon?: React.ReactElement | string | undefined;
+  rightButtonIcon?: React.ReactElement | string | undefined;
   stylesButton?: string;
 };
 
