@@ -4,11 +4,29 @@ import { useState } from "react";
 import { useThemeController } from "@/libs/hooks/useThemeController";
 // Global Components
 import { Button } from "@/components/common";
+import { InputSelect } from "@/components/form";
+
+const COLOR_OPTIONS = [
+  { key: "blue", value: "blue" },
+  { key: "red", value: "red" },
+  { key: "green", value: "green" },
+  { key: "yellow", value: "yellow" },
+  { key: "pink", value: "pink" },
+  { key: "cyan", value: "cyan" },
+  { key: "sky", value: "sky" },
+];
 
 const ThemeColorPicker: React.FC = () => {
   const { tones, toggleTheme, updateStageColor } = useThemeController();
   const [accordionOpen, setAccordionOpen] = useState(false);
+  const [colorOption, setColorOption] = useState(COLOR_OPTIONS[0].key);
   const toggleAccordion = () => setAccordionOpen((prev) => !prev);
+
+  const handleColorOptions = (data: string) => {
+    console.table(data)
+    setColorOption(data);
+    updateStageColor(data);
+  };
 
   return (
     <section className="space-y-2">
@@ -28,13 +46,13 @@ const ThemeColorPicker: React.FC = () => {
           />
 
           <div className="flex flex-wrap gap-2 bg-">
-            {["pink", "red", "blue", "cyan", "sky", "yellow", "white", "black"].map((color) => (
-              <Button
-                key={color}
-                onClick={() => updateStageColor(color as any)}
-                text={"escenario " + color}
-              />
-            ))}
+            <InputSelect
+              label={"selector de colores"}
+              name={"colorPicker"}
+              onChange={handleColorOptions}
+              options={COLOR_OPTIONS}
+              value={colorOption}
+            />
           </div>
         </>
       )}

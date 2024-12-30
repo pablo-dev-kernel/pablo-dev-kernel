@@ -21,8 +21,8 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const calculateTextColor = (color: string) => {
-  const lightTextColors = ["red", "sky", "green", "black"];
-  const darkTextColors = ["yellow", "white"];
+  // const lightTextColors = ["red", "sky", "green", "black"];
+  const darkTextColors = ["white"];
 
   return darkTextColors.includes(color) ? "text-stone-900" : "text-stone-200";
 };

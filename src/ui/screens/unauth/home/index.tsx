@@ -20,14 +20,14 @@ const HomeScreen: React.FC = () => {
   return (
     <>
       <section className="text-stone-200 p-2 md:p-4 space-y-2">
-        <p>
+        <p className="text-center">
           <strong className="text-3xl md:text-5xl text-nowrap md:pl-4 mr-2">{dataLeng.home.welcomeMessage}</strong>
-          <br className="lg:hidden" />
+          <br className="md:hidden" />
           <span className="text-xl md:text-2xl text-nowrap">{dataLeng.home.introText}</span>
         </p>
 
         <div className="md:px-10">
-          <figure className={`float-right md:float-left outline ${tones.outlineColor.normal} rounded-full w-40 md:w-48 m-2 md:m-4 overflow-hidden`}>
+          <figure className={`float-right md:float-left outline ${tones.outlineColor.normal} h-48 w-48 rounded-full m-2 md:m-4 overflow-hidden`}>
             <Image src={photoProfile} alt="photo profile" />
           </figure>
 

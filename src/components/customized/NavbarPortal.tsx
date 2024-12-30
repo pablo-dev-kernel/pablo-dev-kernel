@@ -58,7 +58,7 @@ const NavbarPortal: React.FC<NavbarPortalProps> = ({
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [openMenu]);
+  }, [openMenu, handleCloseMenu]);
 
   const { tones } = useThemeController();
 

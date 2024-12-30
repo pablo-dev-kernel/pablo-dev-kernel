@@ -46,7 +46,7 @@ interface TaskTableProps {
 }
 
 const TaskTable: FC<TaskTableProps> = ({ headers, columns }) => {
-  const { UI_COLORS, tones } = useThemeController();
+  const { tones } = useThemeController();
 
   return (
     <table className={`outline ${tones.outlineColor.normal} rounded-xl w-full overflow-hidden`}>

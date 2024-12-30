@@ -2,7 +2,7 @@ import { useState, ChangeEvent } from "react";
 // Hooks
 import { useThemeController } from "@/libs/hooks/useThemeController";
 // Components
-import { InputField } from "@/components/common";
+import { InputField } from "@/components/form";
 // Local Components
 import TableHeader, { TableHeaderProps } from "./TableHeader";
 import TableBody, { TableBodyProps } from "./TableBody";

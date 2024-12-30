@@ -77,6 +77,7 @@ export default {
     'bg-stone-100', 'bg-stone-200', 'bg-stone-300', 'bg-stone-400', 'bg-stone-500', 'bg-stone-600', 'bg-stone-700', 'bg-stone-800', 'bg-stone-900',
     'hover:bg-stone-100', 'hover:bg-stone-200', 'hover:bg-stone-300', 'hover:bg-stone-400', 'hover:bg-stone-500', 'hover:bg-stone-600', 'hover:bg-stone-700', 'hover:bg-stone-800', 'hover:bg-stone-900',
 
+    'bg-stone-200/80', 'dark:bg-stone-900/80',
     'shadow-stone-700', 'hover:shadow-stone-700',
 
     // 'bg-white-500', 'bg-white-700', 'bg-white-900',

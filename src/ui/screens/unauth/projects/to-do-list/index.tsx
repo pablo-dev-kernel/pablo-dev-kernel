@@ -5,18 +5,18 @@ import { useThemeController } from "@/libs/hooks/useThemeController";
 // Local Hooks
 import useTasks from "./hooks/useTasks";
 // Global Components
-import { InputSelect } from "@/components/common";
+import { InputSelect } from "@/components/form";
 // Local Components
 import { TaskCard, TaskForm, TaskFormRemove, TaskList, TaskTable } from "./components";
 // Types
 import { TaskProps } from "./types/task.types";
 
-const VIEW_OPTIONS = ["lista", "tabla", "tarjeta"];
+const VIEW_OPTIONS = [{ key: "lista", value: "lista" }, { key: "tabla", value: "tabla" }, { key: "tarjeta", value: "tarjeta" }];
 
 const ToDoListScreen: React.FC = () => {
   const { createTask, editTask, removeTask, error, isLoading, listTasks } = useTasks();
 
-  const [viewOption, setViewOption] = useState(VIEW_OPTIONS[0]);
+  const [viewOption, setViewOption] = useState(VIEW_OPTIONS[0].key);
 
   const handleViewOptions = (data: string) => {
     setViewOption(data);
@@ -98,7 +98,7 @@ const ToDoListScreen: React.FC = () => {
         <InputSelect
           placeholder="Ver:"
           name="viewOption"
-          options={[{ key: "1", value: "lista" }, { key: "2", value: "tabla" }, { key: "3", value: "tarjeta" }]}
+          options={VIEW_OPTIONS}
           onChange={handleViewOptions}
           value={viewOption}
           disabled={isLoading}

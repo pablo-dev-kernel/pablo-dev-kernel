@@ -1,8 +1,9 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 // Components
-import { Button, InputField } from "@/components/common";
-import {  ModalPortal } from "@/components/customized";
-import {  Checkbox } from "@/components/form/InputCheckBox";
+import { Button } from "@/components/common";
+import { InputField } from "@/components/form";
+import { ModalPortal } from "@/components/customized";
+import { Checkbox } from "@/components/form/InputCheckBox";
 // Types
 import { TaskProps } from "../types/task.types";
 

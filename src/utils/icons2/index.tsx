@@ -4,7 +4,7 @@ interface IconProps {
   fill?: string;
 }
 
-const HTMLIcon: React.FC<IconProps> = ({ width = 24, height = 24, fill = "#000" }) => (
+const HTMLIcon: React.FC<IconProps> = () => (
   <svg width="800px" height="800px" viewBox="-22.5 0 301 301" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid">

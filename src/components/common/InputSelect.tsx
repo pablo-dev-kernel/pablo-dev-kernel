@@ -24,7 +24,6 @@ const InputSelect: React.FC<InputSelectProps> = ({
   onChange,
   required,
   styles = '',
-  placeholder,
   disabled,
   value
 }) => {
@@ -48,8 +47,6 @@ const InputSelect: React.FC<InputSelectProps> = ({
         required={required}
         value={value || ''}
         disabled={disabled}
-        aria-required={required}
-        aria-placeholder={placeholder}
       >
         {/* <option value="" disabled>Seleccionar</option> */}
         {options.map(({ key, value, disabled }) => (

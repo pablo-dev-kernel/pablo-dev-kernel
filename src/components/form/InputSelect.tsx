@@ -28,7 +28,10 @@ const InputSelect: React.FC<InputSelectProps> = ({
   className = "",
 }) => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    onChange(e.target.value);
+    const selectedValue = e.target.value;
+    if (selectedValue !== "-1") {
+      onChange(selectedValue); // Llama al `onChange` solo si no es el placeholder
+    }
   };
 
   const renderOptions = () => {
@@ -61,7 +64,7 @@ const InputSelect: React.FC<InputSelectProps> = ({
         name={name}
         onChange={handleChange}
         value={value}
-        className={`bg-stone-200 dark:bg-stone-800 border border-sky-700 rounded-md font-bold uppercase p-2 ${className}`}
+        className={`bg-stone-200 dark:bg-stone-800 text-stone-900 dark:text-stone-200 border border-sky-700 rounded-md font-bold uppercase p-2 ${className}`}
       >
         <option value="-1" disabled>
           {placeholder}
